@@ -1,0 +1,45 @@
+.jumbotron {
+  height: 300px;
+  background-color: $jumbotron-bg;
+  color: $jumbotron-color;
+  .container {
+    position: relative;
+    height: 100%;
+    .welcome-message {
+	  background-color: hsla(0,0,1%,0.4); // translucent overlay
+	  position: absolute;
+ 	  top: 0;
+	  left: 0;
+	  right: 0;
+      @include media-breakpoint-up(lg) {
+        right: 50%;
+	  }
+      bottom: auto;
+	  padding: 20px 40px;
+	  strong {
+        font-size: 1.5em;
+	    text-transform: uppercase;
+	  }
+      @include media-breakpoint-down(sm) {
+        .display-3 {
+          font-size: 1.5em;
+        } 
+      }  
+      .btn {
+        margin-top: $spacer-y;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    background: url('#{$images-path}subway-906x600.jpg') center center no-repeat;
+  }
+  @include media-breakpoint-only(md) {
+    height: 480px;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 540px;
+    background: #191919 url('#{$images-path}subway-1600x1060.jpg') center center no-repeat;
+    background-size: cover;
+  }
+}

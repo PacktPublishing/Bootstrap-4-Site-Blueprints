@@ -1,0 +1,30 @@
+// paths
+$images-path: '../images/';
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:              #454545;
+$gray:                   #777;
+$gray-light:             #aeaeae;
+$gray-lighter:           #ccc;
+$gray-lightest:          #ededed;
+
+$brand-primary:             #c1ba62;
+$brand-success:             #5cb85c;
+$brand-info:                #5bc0de;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+// Navbar
+$navbar-bg:                   #fff;
+
+// Navbar links
+$navbar-link-color:                $gray;
+$navbar-link-bg:                   #fff;
+$navbar-link-hover-color:          #fff;
+$navbar-link-hover-bg:             $gray;
+$navbar-link-active-color:         #fff;
+$navbar-link-active-bg:            $gray-dark;
+

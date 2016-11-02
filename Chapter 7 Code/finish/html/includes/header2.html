@@ -1,0 +1,29 @@
+<header role="banner">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><img src="{{root}}/images/logo.png" alt="Bootstrappin'" width="180"></a> 
+  </div>     
+  <nav class="navbar navbar-full navbar-light" role="navigation" style="background-color:black;">
+  <div class="container">
+  <a class="navbar-brand" href="index.html"><img src="{{root}}/images/logo.png" alt="Bootstrappin'" width="120"></a>
+   <button class="navbar-toggler hidden-md-up pull-xs-right" type="button" data-toggle="collapse" data-target="#collapsiblecontent">
+    &#9776;
+  </button>
+  <ul class="nav navbar-nav navbar-toggleable-sm collapse" id="collapsiblecontent">
+  {{#each productgroups}}
+    <li class="nav-item dropdown {{#ifCond this 'Shoes'}}active{{/ifCond}}">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      {{ this }}
+      </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </li>
+  {{/each}} 
+  </ul>
+  </div>
+  </nav>
+</header>

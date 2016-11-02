@@ -1,0 +1,90 @@
+// Variables
+
+// Table of Contents
+//
+// Colors
+// Links
+// Navbar
+// Carousel
+// Buttons
+// Fonts
+
+// General variable structure
+//
+// Variable format should follow the `$component-modifier-state-property` order.
+
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-darker:            #222; // edited
+$gray-dark:              #454545; // edited
+$gray:                   #777; // edited
+$gray-light:             #aeaeae; // edited
+$gray-lighter:           #ccc; // edited
+$gray-lightest:          #ededed; // edited
+$off-white:              #fafafa; // edited
+
+$brand-primary:          #3e7dbd; // edited blue
+$brand-feature:          #c60004; // added new red
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                    #fff;
+$body-color:                 $gray-dark;
+
+// Links
+$link-color:            $brand-primary;
+$link-color-hover:      lighten($link-color, 15%);
+
+// Navbar
+$navbar-xs-color:             $body-color;
+$navbar-xs-bg:                #fff;
+$navbar-md-color:             $gray-lightest;
+$navbar-md-bg:                $brand-primary;
+
+// Navbar links
+$navbar-xs-color:                $navbar-xs-color;
+$navbar-xs-hover-color:          $navbar-xs-color;
+$navbar-xs-hover-bg:             darken($navbar-xs-bg, 5%);
+$navbar-xs-active-color:         $navbar-xs-color;
+$navbar-xs-disabled-color:       $navbar-xs-hover-bg;  
+
+$navbar-md-color:                $navbar-md-color;
+$navbar-md-hover-color:          $navbar-md-color;
+$navbar-md-hover-bg:             darken($navbar-md-bg, 5%);
+$navbar-md-active-color:         $navbar-md-color;
+$navbar-md-disabled-color:       $navbar-md-hover-bg; 
+
+
+// Carousel
+
+$carousel-text-shadow:                        0 1px 2px rgba(0,0,0,.6);
+
+$carousel-control-color:                      #fff;
+$carousel-control-width:                      15%;
+$carousel-control-opacity:                    .5;
+$carousel-control-font-size:                  20px;
+
+$carousel-indicator-bg:                       $gray-light;
+$carousel-indicator-active-bg:                $gray-lightest;
+$carousel-indicator-border-color:             transparent;
+
+$carousel-caption-color:                      #fff;
+
+// Buttons
+
+$btn-secondary-color:              $gray;
+$btn-secondary-bg:                 $gray-lightest;
+$btn-secondary-border:             darken($btn-secondary-bg, 5%);
+
+$btn-feature-color:              #fff;
+$btn-feature-bg:                 $brand-feature;
+$btn-feature-border:             darken($btn-feature-bg, 5%);
+
+// Font aweosme
+
+$fa-font-path:    "../fonts";

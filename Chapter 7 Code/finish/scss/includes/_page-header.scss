@@ -1,0 +1,8 @@
+// Page header
+// -------------------------
+
+.page-header {
+  padding-bottom: ($spacer / 2);
+  margin: $spacer 0 ($spacer / 2);
+  border-bottom: 1px solid $page-header-border-color;
+}

@@ -1,0 +1,65 @@
+//@include bg-variant('.bg-accent-color', $accent-color);
+//@include bg-variant('.bg-dark', $dark-color);
+
+.bg-dark {
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+.bg-accent-color {
+  color: $light-color;
+  background-color: $accent-color;
+}
+
+.page-footer {
+  position: relative;
+  padding: $spacer;
+  margin-top: $spacer-y;
+  &::after {
+    @include triangle(top,$dark-color);
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+  }
+  h3 {
+    color: $accent-color;
+  }
+}
+
+.social-buttons {
+  &.fixed-media {
+    display: none;
+    @include media-breakpoint-up(md) {
+      position: fixed;
+      top: 150px;
+      display: block;
+    }
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    li {
+      padding: 10px;
+      border: 1px solid $accent-color-light;
+    }
+  }
+  .page-footer & {
+    li {
+      float: left;
+      @extend .bg-accent-color;
+    }
+  }
+  @include clearfix();
+}
+
+.btn-accent-color {
+  @include button-variant(#fff, $accent-color, #fff);
+}
+
+/*.page-footer {
+  button {
+    @extend .btn;
+    @include button-variant(#fff, $accent-color, #fff);
+  }
+}*/

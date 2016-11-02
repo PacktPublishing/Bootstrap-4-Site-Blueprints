@@ -1,0 +1,30 @@
+// Justified nav links
+// -------------------------
+
+@mixin nav-justified($breakpoint: md) {
+  width: 100%;
+
+  .nav-item {
+    float: none;
+  }
+
+  .nav-link {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  > .dropdown .dropdown-menu { //todo: remove child selector
+    top: auto;
+    left: auto;
+  }
+
+  @include media-breakpoint-up($breakpoint) {
+    .nav-item {
+      display: table-cell;
+      width: 1%;
+    }
+    .nav-link {
+        margin-bottom: 0;
+    }
+  }
+}

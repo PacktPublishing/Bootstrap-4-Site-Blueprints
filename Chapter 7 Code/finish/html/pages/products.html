@@ -1,0 +1,103 @@
+---
+layout: default
+title: Home
+---
+<main role="main">
+  <div class="container">
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Parent Category</a></li>
+      <li class="breadcrumb-item active">Current Category</li>
+    </ol>
+
+    <div class="page-header">
+      <h1 class="display-5">Product Category Name <small class="text-muted">with explanatory text</small></h1>
+    </div>
+    
+    <div class="row">
+      <div class="grid-options col-md-4 col-lg-3">
+
+        <h2 class="clearfix">Narrow your selection
+            <button type="button" class="options-panel-toggle btn btn-primary pull-right hidden-md-up" data-toggle="collapse" data-target="#options-panel">
+            <span class="icon fa fa-cog fa-2x"></span>
+            </button>
+        </h2>
+        <div id="options-panel" class="options-panel collapse navbar-toggleable-sm">
+        <a class="btn btn-feature choose-clearance" href="#">
+          <span class="icon fa fa-tag fa-3x"></span>
+          <h3>Clearance Sale</h3>
+          <p>View clearance items</p>
+        </a>
+        
+        
+        <h3>Categories</h3>
+        <ul class="options-list options-categories">
+          {{#each numbers-10}}
+            <li><a href="#">Option {{this}}</a></li>
+          {{/each}}  
+        </ul>
+
+        <h3>Brands</h3>
+        <ul class="options-list options-brands">
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li><a href="#">Option 3</a></li>
+          <li><a href="#">Option 4</a></li>
+          <li><a href="#">Option 5</a></li>
+          <li><a href="#">Option 6</a></li>
+          <li><a href="#">Option 7</a></li>
+          <li><a href="#">Option 8</a></li>
+          <li><a href="#">Option 9</a></li>
+          <li><a href="#">Option 10</a></li>
+        </ul>
+        
+        <h3>Another Filter</h3>
+        <ul class="options-list options-other">
+          <li><a href="#">Option 1</a></li>
+          <li><a href="#">Option 2</a></li>
+          <li><a href="#">Option 3</a></li>
+          <li><a href="#">Option 4</a></li>
+          <li><a href="#">Option 5</a></li>
+          <li><a href="#">Option 6</a></li>
+          <li><a href="#">Option 7</a></li>
+          <li><a href="#">Option 8</a></li>
+          <li><a href="#">Option 9</a></li>
+          <li><a href="#">Option 10</a></li>
+        </ul>
+        </div>
+      </div><!-- /.products-grid-options -->
+      <div class="products-grid col-md-8 col-lg-9">  
+        {{> products-grid }}
+        {{!--> products-grid-cards --}}
+        {{!--> products-grid-cards-flexbox--}}
+
+
+      <nav class="col-xs-12 text-xs-center">
+          <ul class="pagination">
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Previous">
+                <span aria-hidden="true" class="fa fa-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+            </li>
+            <li class="page-item active">
+              <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#" aria-label="Next">
+                <span aria-hidden="true" class="fa fa-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        
+      </div><!-- /.products-grid -->           
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</main>

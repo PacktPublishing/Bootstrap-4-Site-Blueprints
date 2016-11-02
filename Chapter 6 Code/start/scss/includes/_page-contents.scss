@@ -1,0 +1,14 @@
+//
+// Page Contents
+// --------------------------
+.page-contents {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  
+  @include media-breakpoint-down(sm) {
+    [class*="col-"] {
+      clear: both;
+      padding-bottom: 40px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.sidebar {
+  .widget {
+    padding: $spacer-y $spacer-x ($spacer-y / 3);
+    margin-top: $spacer-y;
+    background-color: $light-color;
+    border: 1px solid $gray-dark;
+    
+    ul {
+      @extend .list-group;
+      li {
+        @extend .list-group-item;
+        padding: 0;
+        a {
+          display: block;
+          padding: .75rem 1.25rem;
+          text-decoration: none;
+          @include hover-focus-active {
+            color: $list-group-link-hover-color;
+            background-color: $list-group-hover-bg;
+          }
+        }
+      }
+    }
+  }  
+}

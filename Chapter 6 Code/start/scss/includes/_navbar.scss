@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #fff; // white;
+  @include media-breakpoint-up(md) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .nav-link, 
+  {
+    padding: $spacer;  
+    &:hover,
+    &.active {
+      background-color: $gray-lightest;
+    }
+  }
+  .navbar-brand {
+    //padding: ($spacer - ((($font-size-lg - $font-size-base) * $line-height) / 2));
+    padding: ($spacer - ((2.16rem - ($font-size-base * $line-height)) / 2));
+  }
+  @include media-breakpoint-down(sm) {
+    .navbar-brand,
+    .nav-item {
+      float: none;
+      > img {
+        display: inline-block;
+      }
+    }
+    
+    // dropdown menus
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
+    
+    .dropdown {
+      position: initial;
+    }
+  
+    .dropdown-menu {
+      position: initial;
+      z-index: initial;
+      float: initial;
+      border: initial;
+      border-radius: initial;  
+    }
+  }
+}

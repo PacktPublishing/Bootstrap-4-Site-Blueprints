@@ -1,0 +1,31 @@
+{
+  "name": "jbst4-sass",
+  "version": "4.0.1",
+  "description": "A WordPress starter theme using Bootstrap 4",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bassjobsen/jbst4-sass.git"
+  },
+  "author": "Bass Jobsen",
+  "license": "GPL-2.0",
+  "homepage": "https://github.com/bassjobsen/jbst4-sass",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^2.3.1",
+    "gulp-bower": "0.0.10",
+    "gulp-clean-css": "^2.0.7",
+    "gulp-concat": "^2.5.2",
+    "gulp-concat-util": "^0.5.5",
+    "gulp-jshint": "^1.11.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.5",
+    "jshint-stylish": "^2.0.0"
+  },
+  "scripts": {
+    "postinstall": "bower install"
+  }
+}

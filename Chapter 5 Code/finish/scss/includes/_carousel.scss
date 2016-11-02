@@ -1,0 +1,111 @@
+.carousel {
+  padding-top: 4px; // added
+  padding-bottom: 28px; // added
+  background-color: $gray-lighter; // added
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0; 
+  margin-bottom: 0;
+  li {
+    background-color: $carousel-indicator-bg;
+    &,
+    &.active {
+      border: 0;
+      height: 16px;
+      width: 16px;
+      margin: 0;
+    }
+  }
+}
+
+@keyframes flipInX {
+  from {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    transform: perspective(400px);
+  }
+}
+
+.flipInX {
+  backface-visibility: visible !important;
+  animation-name: flipInX;
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  > .carousel-item {
+    position: relative;
+    display: none;
+    transition: none;
+    backface-visibility: visible !important;
+    animation-name: flipInX;
+    animation-duration: 0.6s;
+
+    // Account for jankitude on images
+    > img,
+    > a > img {
+      @extend .img-fluid;
+      line-height: 1;
+    }
+
+
+  }
+
+  > .active,
+  > .next,
+  > .prev {
+    display: block;
+  }
+
+  > .active {
+    top: 0;
+  }
+
+  > .next,
+  > .prev {
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  > .next {
+    top: 100%;
+  }
+  > .prev {
+    top: -100%;
+  }
+  > .next.left,
+  > .prev.right {
+    top: 0;
+  }
+
+  > .active.left {
+    top: -100%;
+  }
+  > .active.right {
+    top: 100%;
+  }
+}

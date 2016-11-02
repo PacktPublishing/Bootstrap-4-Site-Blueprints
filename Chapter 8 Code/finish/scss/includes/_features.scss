@@ -1,0 +1,15 @@
+// Features Section
+#features {
+  .features-item {
+    text-align: center;
+    padding: 20px;
+    height: 270px;
+    .icon {
+      font-size: 90px;
+    }
+    @include media-breakpoint-only(xs) {
+    margin: 0 auto;
+    max-width: 320px;
+    }  
+  }  
+}

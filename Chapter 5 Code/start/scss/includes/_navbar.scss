@@ -1,0 +1,8 @@
+.navbar {
+  @include media-breakpoint-down(sm) {
+    .navbar-brand,
+    .nav-item {
+      float: none;
+    }
+  }
+}

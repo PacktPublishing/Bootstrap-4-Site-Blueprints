@@ -1,0 +1,3 @@
+.btn-feature {
+  @include button-variant($btn-feature-color, $btn-feature-bg, $btn-feature-border);
+}

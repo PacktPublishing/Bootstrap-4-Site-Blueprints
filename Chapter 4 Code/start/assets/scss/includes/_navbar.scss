@@ -1,0 +1,16 @@
+.navbar {
+  @include media-breakpoint-down(sm) {
+    .navbar-brand,
+    .nav-item {
+      float: none;
+    }
+  }
+  .search-form {
+    @extend .pull-md-right;
+    @include media-breakpoint-up(md) {
+      .input-group {
+        max-width: 300px;
+      }
+    }    
+  }
+}

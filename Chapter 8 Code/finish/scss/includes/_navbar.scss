@@ -1,0 +1,37 @@
+.navbar {
+  background-color: $navbar-bg;
+  color: $navbar-link-color;
+  padding: 0 1rem;  
+  
+  .nav-item + .nav-item {
+    margin-left: 0;
+  }
+  .nav-link, .navbar-brand {
+    padding: $spacer-y * .75 $spacer-x * 2;
+  }  
+  .navbar-brand {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.navbar-brand img {
+  width: $brand-image-width;
+}
+
+.nav-link { 
+  color: $navbar-link-color;
+  line-height: $brand-image-height;
+  text-transform: uppercase;
+  
+  .active &, 
+  &.active
+  {
+    background-color: $navbar-link-active-bg;
+    color: $navbar-link-active-color;
+  }
+  @include hover {
+    background-color: $navbar-link-hover-bg;
+    color: $navbar-link-hover-color;
+  }
+}

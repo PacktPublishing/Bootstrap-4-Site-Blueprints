@@ -1,0 +1,35 @@
+.carousel {
+  padding-top: 4px; // added
+  padding-bottom: 28px; // added
+  background-color: $gray-lighter; // added
+}
+.carousel-item {
+  max-height: 640px;
+}
+
+.carousel-item {
+  > img {
+    @include media-breakpoint-up(md) {  
+      margin-top: -40px;
+    }
+    @include media-breakpoint-up(lg) {  
+      margin-top: -60px;
+    }
+  }
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 0; 
+  margin-bottom: 0;
+  li {
+    background-color: $carousel-indicator-bg;
+    &,
+    &.active {
+      border: 0;
+      height: 16px;
+      width: 16px;
+      margin: 0;
+    }
+  }
+}

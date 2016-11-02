@@ -1,0 +1,127 @@
+#signup {
+  
+  font-size: 100%;
+  @include media-breakpoint-only(md) {
+    font-size: 70%;
+  }
+  table {
+    border: 1px solid $table-border-color;
+    thead th {
+      text-align: center;
+      background-color: $gray-light;
+      color: #fff;
+      padding: 2 * $spacer-y 0;
+
+      h2 {
+        text-transform: uppercase;
+        font-size: 2em; 
+      }
+    }
+    tbody {
+      td {
+        padding-left: $spacer-x;
+        padding-right: $spacer-x;
+      }
+    }
+    a.btn {
+      @extend .btn-lg;
+      font-size: 1.25em;
+      display: block;
+      width: 100%;
+      background-color: $gray-light;
+      color: #fff;
+    }
+  }
+  .price {
+    font-size: 4em;
+    line-height: 1;
+    &::first-letter {
+      font-size: .5em;
+      vertical-align: super;   
+    }
+  }
+  .package-premium .price {
+    font-size: 7em;
+  }  
+}
+
+// Pricing Table Colors
+
+#signup .package-basic table {
+  thead th {
+    background-color: $brand-primary;
+  }
+  .btn {
+    @include button-variant(#fff, $brand-primary, darken($brand-primary, 5%));
+  }
+}
+
+#signup .package-premium table {
+  thead th {
+    background-color: $brand-secondary;
+  }
+  .btn {
+    @include button-variant(#fff, $brand-secondary, darken($brand-secondary, 5%));
+  }
+}
+
+#signup .package-pro table {
+  thead th {
+    background-color: $brand-tertiary;
+  }
+  .btn {
+    @include button-variant(#fff, $brand-tertiary, darken($brand-tertiary, 5%));
+  }
+}
+
+//
+// Constrain width for small screens and under
+// ------------------------------------------
+
+@include media-breakpoint-down(sm) { 
+  #signup .package {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+}
+
+//
+// Visually enhance the premium plan
+// ------------------------------------------
+@include media-breakpoint-up(md) {
+
+  // Squeeze tables together
+  .col-md-4 {
+    padding: 0;
+  }
+  
+  // Size down the basic and pro
+  #signup .package-basic {
+    padding-left: 4 * $spacer-y;
+  }
+  #signup .package-pro {
+    padding-right: 4 * $spacer-y;
+  }
+  #signup .package-basic table,
+  #signup .package-pro table {
+    margin-top: 3 * $spacer-x;
+  }   
+
+  // Size up the premium
+  #signup .package-premium table {
+    thead th {
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+    a.btn {
+      font-size: 2em;
+      padding-top: 1.5 * $spacer-x;
+      padding-bottom: 1.5 * $spacer-x;
+    }
+  }
+    
+
+  
+}
+

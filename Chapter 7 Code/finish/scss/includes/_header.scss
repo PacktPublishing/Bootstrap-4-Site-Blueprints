@@ -1,0 +1,62 @@
+header[role="banner"] {
+  border-bottom: 4px solid $gray-lighter; 
+  
+  // header container do not use the flexbox layout, so floats have to be cleared
+  @if $enable-flex {
+    .container {
+      @include clearfix();
+    }  
+  }
+  
+  .navbar-toggler {
+    float: left;
+  }
+  .navbar-brand {
+    > img {
+      width: 180px;
+      padding-left: $spacer-x;
+      @include media-breakpoint-up(md) {
+        padding-top: $spacer-y * 3;
+        padding-left: 0;
+        width: 360px;
+      }
+    }
+  }
+  
+  // Banner Area Styles
+  .utility-nav {
+    position: absolute;
+    top: $spacer-y;
+    right: 0;
+    ul {
+      list-style: none;
+      li {
+        float: left;
+        a {
+          padding: 0 $spacer-x;
+          @include hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      top: 0;
+      span {
+        @include sr-only;
+      }
+      .icon {
+        font-size: 2em;
+        line-height: 1.2;
+      }
+    }
+  }
+  .search-form {
+    @include media-breakpoint-up(md) {
+      padding-top: $spacer-y * 6;
+    }
+    .typeahead.dropdown-menu {
+      z-index: 2000;
+    }  
+  }
+}

@@ -1,0 +1,12 @@
+.navbar {
+  //background: transparent;
+  background: rgba(255,255,255,0.5);
+  //@include gradient-horizontal(green, white);
+
+  @include media-breakpoint-down(sm) {
+    .navbar-brand,
+    .nav-item {
+      float: none;
+    }
+  }
+}

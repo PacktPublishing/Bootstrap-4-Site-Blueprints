@@ -1,0 +1,25 @@
+main {
+  article {
+    padding-top: $spacer-y;
+  }
+}
+
+.blog-post {
+  padding: $spacer-y $spacer-x;
+  margin-top: $spacer-y;
+  background-color: $light-color;
+  border: 1px solid $gray;
+  position: relative;
+  &::before {
+    @include triangle(top,$gray,1.1em);
+    position: absolute;
+    left: 29px;
+    bottom: 100%;
+  }  
+  &::after {
+    @include triangle(top,$light-color);
+    position: absolute;
+    left: 30px;
+    bottom: 100%;
+  }  
+} 

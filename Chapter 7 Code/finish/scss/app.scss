@@ -1,0 +1,24 @@
+@import "includes/variables";
+@import "font-awesome/scss/font-awesome.scss";
+@import "includes/bootstrap";
+
+// Components
+@import "includes/breadcrumb";
+@import "includes/page-header";
+
+// Other custom files
+@import "includes/mixins";
+@import "includes/header";
+@import "includes/navbar";
+@import "includes/carousel";
+@import "includes/buttons";
+@import "includes/grid-options";
+@import "includes/products-grid";
+@import "includes/page-contents";
+@import "includes/footer";
+
+
+// make images responisve by default
+img {
+  @extend .img-fluid;    
+}

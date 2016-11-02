@@ -1,0 +1,44 @@
+// Product items
+// -------------------------
+
+.product-item {
+  padding-bottom: ($spacer-y * 2);
+  
+  h2 {
+    font-size: $font-size-lg;
+    line-height: $line-height-lg;
+    padding: 0;
+    margin-top: ($spacer-y / 7);
+    margin-bottom: ($spacer-y / 8);
+  }  
+  p {
+    font-size: $font-size-sm;
+    line-height: $line-height-sm;
+    color: $gray;
+  }
+  /*.btn-sm {
+    @include media-breakpoint-only(sm) {
+       font-size: $font-size-sm * 0.8;
+    }
+  }*/
+}
+
+@include media-breakpoint-up(sm) {
+  .card-deck {
+      padding-bottom: ($spacer-y * 2);
+  }
+}
+
+@if $enable-flex {
+  .card-deck .card {
+    flex-basis: 30%;
+  }
+
+  @include media-breakpoint-up(sm) {
+    .card-deck .card {
+      &:last-child {
+        border: initial; // 0      
+      }
+    }
+  }
+}

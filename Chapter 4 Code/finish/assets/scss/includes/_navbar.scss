@@ -1,0 +1,48 @@
+.bg-primary-color {
+  color: $light-color;
+  background-color: $primary-color;
+}
+
+.navbar {
+  @include nav-justified;
+  padding-top: 0;
+  padding-bottom: 0;
+
+  @include media-breakpoint-down(sm) {
+    .nav-item + .nav-item {
+      margin-left: 0;
+    }
+  }
+  .nav-link {
+    position: relative;
+    &.active,
+    &:hover {
+      background-color: $accent-color;
+    }
+    @include media-breakpoint-up(md) {
+      &.active {
+        &::before {
+          @include triangle(bottom,$accent-color);
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          margin-left: -1em;
+        }
+      }
+    }
+  }
+
+  .nav-item:nth-child(3) .nav-link {
+    display: none;
+    @include media-breakpoint-up(md) {
+      position: absolute;
+      top: -100%;
+      z-index: 1;
+      display: block;
+      &.active,
+      &:hover {
+        background-color: transparent;
+      }      
+    }
+  }
+}

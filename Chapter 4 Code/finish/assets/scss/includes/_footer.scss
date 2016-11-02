@@ -1,0 +1,42 @@
+//@include bg-variant('.bg-accent-color', $accent-color);
+//@include bg-variant('.bg-dark', $dark-color);
+
+.bg-dark {
+  color: $light-color;
+  background-color: $dark-color;
+}
+
+.bg-accent-color {
+  color: $light-color;
+  background-color: $accent-color;
+}
+
+.page-footer {
+  position: relative;
+  padding: $spacer;
+  margin-top: $spacer-y;
+  &::after {
+    @include triangle(top,$dark-color);
+    position: absolute;
+    bottom: 100%;
+    left: 10%;
+  }
+  h3 {
+    color: $accent-color;
+  }
+}
+
+.page-footer {
+    nav[role="navigation"] {
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+          float: left;
+          padding: 10px;
+        }
+      }
+      @include clearfix;
+    }
+}

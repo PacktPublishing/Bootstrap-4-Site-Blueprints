@@ -1,0 +1,12 @@
+.masonry {
+  .card-columns {
+    padding-top: $spacer-y;
+  }
+}
+    
+.mansory-blog-post {
+  position: relative;
+  padding: $spacer-y $spacer-x;
+  background-color: $light-color;
+  border: 1px solid $gray;
+}

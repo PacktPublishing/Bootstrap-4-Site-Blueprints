@@ -1,0 +1,35 @@
+<header role="banner">
+  <div class="container">
+   <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#collapsiblecontent">
+    &#9776;
+   </button>
+   <a class="navbar-brand" href="/"><img src="{{root}}/images/logo.png" alt="Bootstrappin'"></a> 
+   <div class="utility-nav">
+      <ul>
+        <li><a href="#" title="Login or Register"><i class="icon fa fa-user fa-lg"></i><span> Log In or Register</span></a></li>
+        <li><a href="#" title="View Cart"><i class="icon fa fa-shopping-cart fa-lg"></i><span> View Cart</span></a></li>
+      </ul>
+   </div>
+  </div>     
+  <nav class="navbar navbar-full" role="navigation">
+  <div class="container navbar-toggleable-sm collapse" id="collapsiblecontent">
+  <ul class="nav navbar-nav">
+  {{#each productgroups}}
+    {{#ifCond this 'All Departments'}}</ul><ul class="nav navbar-nav pull-md-right">{{/ifCond}}
+    <li class="nav-item dropdown {{#ifCond this 'Shoes'}}active{{/ifCond}}">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      {{ this }}
+      </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+    </li>
+  {{/each}} 
+  </ul>
+  </div>
+  </nav>
+</header>

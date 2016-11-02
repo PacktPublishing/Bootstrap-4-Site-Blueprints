@@ -1,0 +1,18 @@
+.navigation.pagination {
+  display: block;
+  text-align: center;
+  
+}
+.page-numbers {
+  @extend .page-item;
+  margin-right: -4px;
+}
+
+.page-numbers.current {
+  @extend .page-item.active;
+}
+.page-link {
+  display: inline-block;
+  float: initial;
+}
+

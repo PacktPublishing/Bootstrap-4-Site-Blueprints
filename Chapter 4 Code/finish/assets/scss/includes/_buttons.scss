@@ -1,0 +1,11 @@
+/* button,
+input[type="submit"], 
+.button {
+ @extend .btn;
+ @include button-variant(#fff, $accent-color, #fff);
+} */
+
+.btn-accent-color {
+  @include button-variant(#fff, $accent-color, #fff);
+}
+

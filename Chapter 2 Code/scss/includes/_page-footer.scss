@@ -1,0 +1,11 @@
+.page-footer {
+  padding: $spacer-y 0;
+  margin-top: $spacer-y;
+  color: $lightest-color;
+  a {
+    @include plain-hover-focus {
+      color: $lightest-color;
+    }
+  }
+  background-color: $page-footer-background;
+}

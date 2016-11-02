@@ -1,0 +1,61 @@
+//
+// Footer
+// --------------------------
+
+/* ul.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  > li {
+    display: inline-block;
+    > a {
+      display: inline-block;
+      font-size: 18px;
+      line-height: 30px;
+      @include square(30px); // see includes/mixins/_size.scss
+      border-radius: 36px;
+      background-color: $gray-light;
+      color: #fff;
+      margin: 0 3px 3px 0;
+      &:hover, 
+      &:focus {
+        text-decoration: none;
+        background-color: $link-hover-color;
+      }
+    }
+  }
+}*/
+
+.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social-item {
+ display: inline-block;
+} 
+
+.social-link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  @include square(30px); // see includes/mixins/_size.scss
+  border-radius: 36px;
+  background-color: $gray-light;
+  color: #fff;
+  margin: 0 3px 3px 0;
+  @include hover-focus { // bootstrap/scss/mixins/_hover.scss
+    text-decoration: none;
+    background-color: $link-hover-color;
+    color: #fff;
+  }
+}
+
+footer[role="contentinfo"] {
+  padding-top: 24px;
+  padding-bottom: 36px;
+  text-align: center;
+}

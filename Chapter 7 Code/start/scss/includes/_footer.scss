@@ -1,0 +1,66 @@
+//
+// Footer
+// --------------------------
+
+.social {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.social-item {
+ display: inline-block;
+} 
+
+.social-link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  @include square(30px); // see includes/mixins/_size.scss
+  border-radius: 36px;
+  background-color: darken($navbar-md-bg, 27%);
+  color: darken($navbar-md-color, 18%);
+  margin: 0 3px 3px 0;
+  @include hover-focus { // bootstrap/scss/mixins/_hover.scss
+    text-decoration: none;
+    background-color: darken($navbar-md-bg, 32%);
+    color: $navbar-md-hover-color;
+  }
+}
+
+footer[role="contentinfo"] {
+  padding-top: 24px;
+  padding-bottom: 36px;
+  
+  font-size: $font-size-sm;
+  background-color: darken($navbar-md-bg, 18%);
+  color: darken($navbar-md-color, 18%);
+  
+  a {
+    color: $navbar-md-color;
+    @include hover-focus-active {
+      color: $navbar-md-hover-color;
+    }
+  }
+  .btn-secondary {
+    color: darken($navbar-md-bg, 18%) !important;
+  }
+  
+  h3 {
+    font-size: 120%;
+    margin-top: $spacer-y;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  } 
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-logo {
+    text-align: center;
+  }
+}

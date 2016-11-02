@@ -1,0 +1,27 @@
+//@include bg-variant('.bg-primary-color-dark', $primary-color-dark);
+.bg-primary-color-dark {
+  color: $light-color;
+  background-color: $primary-color-dark;
+  h1 {
+    color: $light-color;
+  }
+}
+
+/* body {
+    header:first-of-type {
+    @include make-container();
+    @include make-container-max-widths();
+    background-color: $primary-color-dark;
+    color: $light-color;
+
+    > div {
+      @include make-row();
+      > div {
+         @include make-col-span(12);
+         h1 {
+           @extend .display-3;
+         }
+      }
+    }
+  }
+}*/

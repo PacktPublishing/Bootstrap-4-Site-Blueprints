@@ -1,0 +1,32 @@
+//@include bg-variant('.bg-primary-color-dark', $primary-color-dark);
+.bg-primary-color-dark {
+  color: $light-color;
+  background-color: $primary-color-dark;
+  h1 {
+    color: $page-header-heading-color;
+  }
+}
+
+/*body {
+    header:first-of-type {
+    @include make-container();
+    @include make-container-max-widths();
+    background-color: $primary-color-dark;
+    color: $light-color;
+    
+    > div {
+      @include make-row();
+      > div {
+         @include make-col-ready($grid-gutter-width); //  use @include make-col-ready(); for alpha 4 and up, see https://github.com/twbs/bootstrap/pull/20597
+         @include make-col(12);
+         h1 {
+           @extend .display-3;
+         }
+      }
+    }
+  }
+}*/
+
+.navbar-toggler {
+  color: $light-color;
+}

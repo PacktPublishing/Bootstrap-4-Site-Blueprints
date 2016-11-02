@@ -1,0 +1,9 @@
+{
+  "name": "jbst4",
+  "private": true,
+  "ignore":  [],
+  "dependencies": {
+    "bootstrap": "4",
+    "tether": "^1.1.2"
+  }
+}

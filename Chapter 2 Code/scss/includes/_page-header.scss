@@ -1,0 +1,26 @@
+.page-header {
+  background-color: $page-header-background;
+
+  .display-3 {
+    color: $company-primary-color;
+    span {
+      color: $lightest-color;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    [class^="col-"]:last-child {
+      margin-top: $spacer-y * 2;
+    }
+  }
+  .form-inline .form-control {
+    display: inline-block;
+    width: auto;
+  }
+  @include media-breakpoint-down(xs) {
+    .display-3 {
+      padding-bottom: $spacer-y;
+      font-size: $display4-size;  
+      text-align: center;
+   }
+  }
+}

@@ -1,0 +1,32 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:                 #373a3c;
+$gray:                      #55595c;
+$gray-light:                #818a91;
+$gray-lighter:              #eceeef;
+$gray-lightest:             #f7f7f9;
+
+$brand-primary:             #0275d8;
+$brand-success:             #5cb85c;
+$brand-info:                #5bc0de;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+// Theme colors
+$primary-color-dark:   #303f9f;
+$primary-color:        #3f51b5;
+$primary-color-light:  #c5cae9;
+$accent-color:         #ff5722;
+$accent-color-light:   #ffab91 !default;
+$dark-color:           #000 !default;
+$light-color:          #fff !default;
+
+$body-bg:    $gray-lighter !default;
+$body-color: $dark-color !default;
+$link-color: $accent-color !default;
+$headings-color: $primary-color !default;
+$page-header-heading-color: $light-color !default;
+$list-group-hover-bg: $accent-color;
+$list-group-link-hover-color: $light-color;

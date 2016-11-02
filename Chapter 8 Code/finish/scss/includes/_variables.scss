@@ -1,0 +1,53 @@
+// paths
+$images-path: '../images/';
+
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+$gray-dark:              #454545;
+$gray:                   #777;
+$gray-light:             #aeaeae;
+$gray-lighter:           #ccc;
+$gray-lightest:          #ededed;
+
+$brand-primary:             #428bca;
+$brand-secondary:           #5cb85c;
+$brand-tertiary:            #d9534f;
+$brand-success:             #5cb85c;
+$brand-info:                #5bc0de;
+$brand-warning:             #f0ad4e;
+$brand-danger:              #d9534f;
+
+// Navbar
+$navbar-bg:                   #fff;
+
+// Navbar links
+$navbar-link-color:                $gray;
+$navbar-link-bg:                   #fff;
+$navbar-link-hover-color:          #fff;
+$navbar-link-hover-bg:             $gray;
+$navbar-link-active-color:         #fff;
+$navbar-link-active-bg:            $gray-dark;
+
+$brand-image-width: 120px;
+$brand-image-height: (259 * $brand-image-width / 900);
+
+// Jumbotron
+$jumbotron-bg: #191919;
+$jumbotron-color: contrast($jumbotron-bg);
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:            .75rem;
+$table-sm-cell-padding:         .3rem;
+
+$table-bg:                      transparent;
+$table-bg-accent:              hsla(0,0,1%,.1); // for striping
+$table-bg-hover:                hsla(0,0,1%,.2);
+$table-bg-active:               $table-bg-hover;
+
+$table-border-width:            1px;
+$table-border-color:            $gray-lighter;

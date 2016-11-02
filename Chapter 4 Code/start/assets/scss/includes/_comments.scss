@@ -1,0 +1,8 @@
+.comments-area {
+  // avatars shouldn't be responsive by default
+  .media-object {
+    display: initial;
+    max-width: initial;
+    height: initial;
+  }  
+}
